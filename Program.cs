@@ -9,14 +9,14 @@ namespace GenreicDemo
         {
             Console.WriteLine("Welcome to Generic Program");
             Console.WriteLine("Please Enter the FirstValue:");
-           double num1 = Convert.ToDouble(Console.ReadLine());
+            string str1 = Console.ReadLine();
             Console.WriteLine("Please Enter the SecondValue:");
-         double num2 = Convert.ToDouble(Console.ReadLine());
+            string str2 = Console.ReadLine();
             Console.WriteLine("Please Enter the ThirdValue:");
-           double num3 = Convert.ToDouble(Console.ReadLine());
-           double val = FindMax.MaximumNum(num1, num2, num3);
+            string str3 = Console.ReadLine();
+            string val = FindMax.MaximumVal(str1, str2, str3);
             Console.WriteLine("{0} is greater", val);
         }
-        
+
     }
 }
