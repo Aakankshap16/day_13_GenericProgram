@@ -3,29 +3,33 @@
 
 namespace GenreicDemo
 {
-    class Program
+
+    public class Program
     {
         public static void Main()
         {
-            int a = 10, b = 20, c = 15;
-            double x=5.5, y=7.7, z = 10.0;
-            string p = "ram", q = "shiv", r = "radha";
+            int[] valuesInt = { 1, 2, 3, 4, 5 };
+            double[] valuesDouble = { 10.4, 6.7 ,8.2, 9.5, 7.3 };
+            string[] valuesString = { "ram", "shiv", "radha" };
 
-            FindMax<int> obj = new FindMax<int>(a, b, c);
+            FindMax<int> obj = new FindMax<int>(valuesInt);
             int MaxInt = obj.TestMaximum();
             Console.WriteLine("Maximum value in integer is: " + MaxInt);
-            Console.WriteLine("****************************************");
+            Console.WriteLine("**********************************************");
 
-            FindMax<double> obj1 = new FindMax<double>(x, y, z);
+           
+            FindMax<double> obj1 = new FindMax<double>(valuesDouble);
             double MaxDouble = obj1.TestMaximum();
             Console.WriteLine("Maximum value in double is: " + MaxDouble);
-            Console.WriteLine("****************************************");
+            Console.WriteLine("**********************************************");
 
-            FindMax<string> obj2 = new FindMax<string>(p, q, r);
+            FindMax<string> obj2 = new FindMax<string>(valuesString);
             string MaxString = obj2.TestMaximum();
             Console.WriteLine("Maximum value in string is: " + MaxString);
-            Console.WriteLine("****************************************");
-        }
+            Console.WriteLine("**********************************************");
 
+        }
     }
+
+  
 }
