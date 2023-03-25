@@ -9,7 +9,7 @@ namespace GenericDemo
     public class FindMax
     {
         
-    public static string MaximumVal(string FirstValue, string SecondValue, string ThirdValue)
+    public static T MaximumNum<T>(T FirstValue, T SecondValue, T ThirdValue) where T : IComparable
     {
             if (FirstValue.CompareTo(SecondValue) > 0 && FirstValue.CompareTo(ThirdValue) > 0 ||
                FirstValue.CompareTo(SecondValue) >= 0 && FirstValue.CompareTo(ThirdValue) > 0 ||
