@@ -25,6 +25,12 @@ namespace GenreicDemo
             return max;
         }
 
+        public void PrintMax()
+        {
+            T max = MaximumNum();
+            Console.WriteLine("Maximum value is: " + max);
+        }
+
         public T TestMaximum()
         {
             T max = MaximumNum();
